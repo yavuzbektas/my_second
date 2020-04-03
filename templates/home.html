@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+merhaba burası ana sayfa sayın {{ isim }}
+
+{% block body %}
+{#        <div class="container-fluid">#}
+{#            <div class="row">#}
+{#                <div class="col-md-3 col-sm-6 "  style="background-color: #ebfb30; height:100px;">1.urun</div>#}
+{#                <div class="col-md-3 col-sm-6 " style="background-color: #fb3b39; height:100px;">2.urun</div>#}
+{#                <div class="col-md-3 col-sm-6 " style="background-color: #51c2fb; height:100px;">3.urun</div>#}
+{#                <div class="col-md-3 col-sm-6 " style="background-color: #44fb6a; height:100px;">4.urun</div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"  style="background-color: #ebfb30; height:100px;">1.urun</div>
+            <div class="col-md-8"  style="background-color: #1ffbe2; height:100px;">
+                <div class="col-md-4"  style="background-color: #4fecfb; height:100px;">2.urun</div>
+                <div class="col-md-4"  style="background-color: #fb6166; height:100px;">3.urun</div>
+                <div class="col-md-4"  style="background-color: #84fb7e; height:100px;">4.urun</div>
+                </div>
+            Hos geldiniz, {{ request.user.get_full_name }}
+        </div>
+    </div>
+{% endblock %}
